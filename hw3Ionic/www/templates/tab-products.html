@@ -1,0 +1,25 @@
+<ion-view view-title="Products" cache-view="false">
+
+
+<ion-nav-buttons side="right">
+  <a class="button button-small" href="#/tab/addproduct">Add</a>
+</ion-nav-buttons> 
+
+
+  <ion-content>
+
+
+
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="product in products" type="item-text-wrap" href="#/tab/products/{{product.objectId}}">
+        <h2>{{product.ProductName}}--{{product.ProductQuantity}}--{{product.ProductPrice}}--{{product.ProductType}}</h2>
+        <p>{{product.OrderDate}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(product)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
