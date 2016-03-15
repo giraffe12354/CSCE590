@@ -141,7 +141,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
      .state('tab.register', {
       url: '/register',
       views: {
-        'tab-trips': {
+        'tab-products': {
           templateUrl: 'templates/register.html',
           controller: 'RegisterCtrl'
         }
@@ -159,7 +159,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('/tab/account');
 
 });
 

@@ -257,6 +257,7 @@ $scope.login = function() {
     // get user's email (i.e. mandatory/predefined property)
     // email = user.getEmail();
      alert("logedin");
+     $state.go("tab.products")
    }
   else
    {
